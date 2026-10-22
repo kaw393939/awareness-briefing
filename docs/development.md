@@ -32,3 +32,9 @@ Pull requests run the build/link check and a PR-description traceability check. 
 The canonical public URL is [Awareness Briefing](https://kaw393939.github.io/awareness-briefing/). If deployment fails, inspect the Actions run before changing the site configuration. A green build alone does not confirm that Pages deployed.
 
 Deployment follows the [VitePress 1 deployment guide](https://vuejs.github.io/vitepress/v1/guide/deploy). Hosting is static: keep all provider secrets and private research out of site files and configuration.
+
+## Mermaid diagrams
+
+Write diagrams in fenced `mermaid` blocks. The VitePress Mermaid plugin renders them and follows the light/dark theme. Include `accTitle` and `accDescr`, plus a nearby prose explanation. Wrap each block in a `div` with `class="diagram"`, `tabindex="0"`, `role="region"`, and a descriptive `aria-label` so wide diagrams can be scrolled by keyboard without shrinking labels.
+
+Keep charts focused and use top-to-bottom flows. Preview charts in both themes and on a narrow screen; a successful static build does not verify client-side Mermaid rendering. KaTeX is overridden to patched version 0.18.2 for Mermaid's transitive dependency; recheck the override when updating Mermaid.

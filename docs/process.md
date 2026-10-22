@@ -2,7 +2,25 @@
 
 ## Traceability contract
 
-Every task connects **issue → relevant document → branch/PR → changed code and docs → verification**. An issue records discussion and acceptance criteria. Markdown records the current specification. A PR records the exact implementation and evidence.
+Every task links its issue, relevant documentation, implementation, and verification evidence. An issue records discussion and acceptance criteria. Markdown records the current specification. A PR records the exact implementation and evidence.
+
+<div class="diagram" tabindex="0" role="region" aria-label="Issue to documentation and code workflow. Scroll horizontally if needed.">
+
+```mermaid
+flowchart TD
+    accTitle: Issue to documentation and code workflow
+    accDescr: Define an issue and link its specification, create a branch, change code and documentation together, open a linked pull request, verify and review, merge and deploy, then confirm acceptance and close the issue.
+    issue["`Issue: outcome and acceptance criteria`"] --> docs["`Link or update specification`"]
+    docs --> branch["`Create issue-linked branch`"]
+    branch --> changes["`Change code and docs together`"]
+    changes --> pr["`Pull request references issue and docs`"]
+    pr --> checks["`Verification and review`"]
+    checks --> merge["`Merge and deploy`"]
+    merge --> confirm["`Confirm acceptance and published result`"]
+    confirm --> close["`Close completed issue`"]
+```
+
+</div>
 
 ## Issue intake
 
@@ -27,3 +45,7 @@ Use the PR template. Include an issue reference (`Closes #123` or `Refs #123`), 
 Acceptance criteria are met, affected docs reflect the change, checks pass, a reviewer can follow the evidence, and the PR is merged. For publishing work, confirm the deployed page. Close only completed issues and remove any active status label.
 
 See [roadmap](roadmap.md) and [development](development.md).
+
+## Related work
+
+- [Render documentation diagrams with Mermaid](https://github.com/kaw393939/awareness-briefing/issues/8)

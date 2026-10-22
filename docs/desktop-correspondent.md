@@ -14,7 +14,26 @@ Use a dedicated contributor identity allowed to submit research and draft update
 
 ## Review flow
 
-Submitted → needs review → corroborated / disputed / insufficient evidence → eligible for an edition. A social post can be useful as a lead while remaining an unverified claim. Review state belongs to the claim, not just to a whole source.
+Submissions enter review. Corroborated claims may become eligible for an edition; disputed claims and those with insufficient evidence remain in review. The detailed publication policy is still an open decision. A social post can be useful as a lead while remaining an unverified claim. Review state belongs to the claim, not just to a whole source.
+
+<div class="diagram" tabindex="0" role="region" aria-label="Proposed claim review flow. Scroll horizontally if needed.">
+
+```mermaid
+flowchart TD
+    accTitle: Proposed claim review flow
+    accDescr: A submitted claim enters review. Corroborated claims may become eligible for an edition. Disputed claims or claims with insufficient evidence require further review.
+    submitted["`Submitted claim`"] --> review["`Needs review`"]
+    review --> state{"Evidence assessment"}
+    state --> corroborated["`Corroborated`"]
+    state --> disputed["`Disputed`"]
+    state --> insufficient["`Insufficient evidence`"]
+    corroborated --> eligible["`May be eligible for an edition`"]
+    disputed --> further["`Further review`"]
+    insufficient --> further
+    further -.-> review
+```
+
+</div>
 
 ## Integration choices still open
 
@@ -25,3 +44,5 @@ See [architecture](architecture.md), [data model](data-model.md), and [roadmap](
 ## Related work
 
 - [Specify desktop correspondent submission contract](https://github.com/kaw393939/awareness-briefing/issues/5)
+
+- [Render documentation diagrams with Mermaid](https://github.com/kaw393939/awareness-briefing/issues/8)

@@ -13,9 +13,12 @@
     "check": "npm run docs:build && node scripts/check-links.mjs"
   },
   "devDependencies": {
-    "vitepress": "1.6.4"
+    "mermaid": "11.17.2",
+    "vitepress": "1.6.4",
+    "vitepress-plugin-mermaid": "2.0.17"
   },
   "overrides": {
-    "vite": "6.4.5"
+    "vite": "6.4.5",
+    "katex": "0.18.2"
   }
 }
