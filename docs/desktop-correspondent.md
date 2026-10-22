@@ -21,16 +21,14 @@ Submissions enter review. Corroborated claims may become eligible for an edition
 ```mermaid
 flowchart TD
     accTitle: Proposed claim review flow
-    accDescr: A submitted claim enters review. Corroborated claims may become eligible for an edition. Disputed claims or claims with insufficient evidence require further review.
-    submitted["`Submitted claim`"] --> review["`Needs review`"]
-    review --> state{"Evidence assessment"}
-    state --> corroborated["`Corroborated`"]
-    state --> disputed["`Disputed`"]
-    state --> insufficient["`Insufficient evidence`"]
-    corroborated --> eligible["`May be eligible for an edition`"]
-    disputed --> further["`Further review`"]
-    insufficient --> further
-    further -.-> review
+    accDescr: Claims enter review. Corroborated claims may be eligible. Disputed claims or insufficient evidence need further review.
+    intake["Submitted claim"] --> assess["Needs review"]
+    assess --> confirmed["Corroborated"]
+    assess --> disputed["Disputed"]
+    assess --> insufficient["Insufficient evidence"]
+    confirmed --> eligible["May be eligible"]
+    disputed --> pending["Further review"]
+    insufficient --> pending
 ```
 
 </div>
