@@ -1,6 +1,11 @@
-import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid({
+  mermaid: {
+    securityLevel: 'strict',
+    theme: 'default',
+    flowchart: { useMaxWidth: false, htmlLabels: false, wrappingWidth: 160 }
+  },
   title: 'Awareness Briefing',
   description: 'An open project notebook for news discovery, topic history, and daily briefings.',
   base: '/awareness-briefing/',

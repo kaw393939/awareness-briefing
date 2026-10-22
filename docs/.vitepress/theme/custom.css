@@ -1,0 +1,23 @@
+.vp-doc .diagram {
+  overflow-x: auto;
+  padding: 16px;
+  margin: 24px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc .diagram:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+.vp-doc .diagram .mermaid {
+  display: flex;
+  justify-content: safe center;
+}
+
+.vp-doc .diagram svg {
+  flex-shrink: 0;
+  max-width: none;
+}

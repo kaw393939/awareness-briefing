@@ -12,6 +12,7 @@
 | `docs/decisions/` | Accepted/proposed architecture decisions |
 | `docs/development.md`, `docs/handoff.md` | Run/check/publish instructions and current state |
 | `docs/.vitepress/config.mts` | Site navigation, search, edit links, Pages base path |
+| `docs/.vitepress/theme/` | Default theme extension and keyboard-scrollable Mermaid diagram styling |
 | `.github/ISSUE_TEMPLATE/` | Structured task, research, and bug intake |
 | `.github/pull_request_template.md` | Issue/docs/verification PR contract |
 | `.github/workflows/` | PR checks and Pages deployment |

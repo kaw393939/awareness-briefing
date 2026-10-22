@@ -6,7 +6,7 @@ Establish public documentation and an issue-driven development workflow for the 
 
 ## Implemented
 
-VitePress documentation with navigation, local search, edit links, and theme support. GitHub issue forms, PR template, labels, initial tracked work, PR checks, and GitHub Pages deployment configuration.
+VitePress documentation with navigation, local search, edit links, theme support, and Mermaid diagrams for architecture, edition production, claim review, and contribution flow. Diagram regions support keyboard scrolling on narrow screens. GitHub issue forms, PR template, labels, initial tracked work, PR checks, and GitHub Pages deployment configuration.
 
 ## Product boundary
 
