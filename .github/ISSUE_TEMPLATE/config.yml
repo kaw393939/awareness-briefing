@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Project documentation
+    url: https://kaw393939.github.io/awareness-briefing/
+    about: Read the current scope and working process before opening an issue.
