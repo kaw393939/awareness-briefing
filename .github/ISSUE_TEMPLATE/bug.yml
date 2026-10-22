@@ -1,0 +1,66 @@
+{
+  "name": "Bug report",
+  "description": "Report broken behavior with reproduction and verification criteria.",
+  "title": "[bug] ",
+  "labels": [
+    "type:bug",
+    "status:backlog"
+  ],
+  "body": [
+    {
+      "type": "textarea",
+      "id": "problem",
+      "attributes": {
+        "label": "Problem or question",
+        "description": "Explain the outcome needed. For bugs include reproduction steps, expected behavior, and actual behavior."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "docs",
+      "attributes": {
+        "label": "Documentation links",
+        "description": "Link the relevant published documentation page/heading or repository Markdown file. If missing, name the document to create."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "code",
+      "attributes": {
+        "label": "Code and dependencies",
+        "description": "List affected source paths, related issues/PRs, and dependencies. State not implemented when appropriate."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "acceptance",
+      "attributes": {
+        "label": "Acceptance criteria",
+        "description": "Use checkboxes for observable outcomes. For research include evidence and the decision document to update."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "verification",
+      "attributes": {
+        "label": "Verification plan",
+        "description": "How will a reviewer verify completion? Include commands or a concrete review procedure."
+      },
+      "validations": {
+        "required": true
+      }
+    }
+  ]
+}
